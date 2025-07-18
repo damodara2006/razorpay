@@ -52,7 +52,7 @@ app.post("/success", (req, res) => {
         razorpaySignature,
         process.env.RAZOR_TEST_SECRET
     );
-    
+
 
     console.log("🔍 Payment Verification:", isValid);
 
@@ -65,5 +65,5 @@ app.post("/success", (req, res) => {
 
 // ✅ Start server
 app.listen(PORT, () => {
-    console.log(`🚀 Server running at http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
 });
