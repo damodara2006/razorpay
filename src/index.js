@@ -11,7 +11,7 @@ const PORT = 8080;
 app.use(cors());
 app.use(express.json());
 
-// Razorpay instance
+
 const razorInstance = new Razorpay({
     key_id: process.env.RAZOR_TEST_KEY,
     key_secret: process.env.RAZOR_TEST_SECRET,
