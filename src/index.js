@@ -28,6 +28,7 @@ app.post("/order", async (req, res) => {
 
         const order = await razorInstance.orders.create(options);
         console.log("✅ Order created:", order);
+        
         res.json({ order });
     } catch (err) {
         console.error("❌ Order creation failed:", err);
