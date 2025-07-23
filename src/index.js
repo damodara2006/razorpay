@@ -17,7 +17,7 @@ const razorInstance = new Razorpay({
     key_secret: process.env.RAZOR_TEST_SECRET,
 });
 
-// ✅ Create Razorpay Order
+
 app.post("/order", async (req, res) => {
     try {
         const amount = req.body.price;
